@@ -1,0 +1,15 @@
+﻿@page "/parent"
+
+<h3>Parent</h3>
+
+<CascadingValue Value="parameter1" Name="CascadeParam1">
+    <CascadingValue Value="parameter2" Name="CascadeParam2">
+        <Child></Child>
+    </CascadingValue>
+</CascadingValue>
+
+@code {
+    private string? parameter1 = "1";
+
+    private string parameter2 = "2";
+}

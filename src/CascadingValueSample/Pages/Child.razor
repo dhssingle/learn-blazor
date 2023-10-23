@@ -1,0 +1,12 @@
+﻿<h3>Child</h3>
+
+<p>@ChildCascadeParameter1</p>
+<p>@ChildCascadeParameter2</p>
+
+@code {
+    [CascadingParameter(Name = "CascadeParam1")]
+    protected string? ChildCascadeParameter1 { get; set; }
+    [CascadingParameter(Name = "CascadeParam2")]
+    protected string? ChildCascadeParameter2 { get; set; }
+
+}
